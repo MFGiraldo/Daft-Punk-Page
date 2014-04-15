@@ -346,6 +346,18 @@ nav ul #Publicar_Nav a:hover
 	float: right;
 }
 
+/* Other Pages */
+#Contenido .album_info .album_img{
+	float: left;
+	margin-right: 1em;
+}
+
+#Contenido .album_info .album_img img{
+	width: 350px;
+	border: solid white 5px;
+	box-shadow: rgba(0,0,0,0.5) 2px 2px 10px;
+}
+
 @media screen and (max-width: 480px) {
 	aside
 	{
@@ -410,4 +422,6 @@ nav ul #Publicar_Nav a:hover
 	border-radius: 5px;
 	padding: 0.2em 0.6em;
 }
+
+
 
