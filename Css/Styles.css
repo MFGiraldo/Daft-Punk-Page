@@ -138,11 +138,8 @@ header h1
 	margin: 0.8em 2em 0 3em ;
 }
 
-h2
-{
-	font-size: 1.5em;
-	margin: 1em 0 0em 1em;
-}
+
+
 header #Avatar
 {
 	margin: 0.7em 0.7em 0 0;
@@ -347,6 +344,13 @@ nav ul #Publicar_Nav a:hover
 }
 
 /* Other Pages */
+
+#Contenido .album_info{
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+}
+
 #Contenido .album_info .album_img{
 	float: left;
 	margin-right: 1em;
@@ -357,6 +361,19 @@ nav ul #Publicar_Nav a:hover
 	border: solid white 5px;
 	box-shadow: rgba(0,0,0,0.5) 2px 2px 10px;
 }
+
+#Contenido .album_info .album_datos .estrellitas{
+	float: right;
+}
+
+h2
+{
+	font-size: 1.5em;
+	margin: 1em 0 0em 1em;
+}
+
+
+
 
 @media screen and (max-width: 480px) {
 	aside
