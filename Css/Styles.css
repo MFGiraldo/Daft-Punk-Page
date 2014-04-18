@@ -355,6 +355,7 @@ nav ul #Publicar_Nav a:hover
 	overflow: hidden;
 	position: relative;
 	padding: 0.5em;
+	margin-bottom: 3em;
 }
 
 #Contenido .album_info .album_img{
@@ -370,7 +371,7 @@ nav ul #Publicar_Nav a:hover
 
 #Contenido .album_info .album_datos .votacion_album {
 	float: right;
-	margin-right: 1em
+	margin-right: 1em;
 }
 
 #Contenido .album_info .album_datos .votacion_album a{
@@ -383,14 +384,20 @@ nav ul #Publicar_Nav a:hover
 }
 
 #Contenido .album_info .social .redes{
-	float: right;
 	margin-right: 1em;
+	bottom: 2em;
+	position: absolute;
+	right: 3%;
 }
 
 #Contenido .album_info .social .redes a{
 	text-decoration: none;
 	font-size: 1.5em;
 	color: #3a3a32;
+}
+
+#Contenido .album_info .social .redes span{
+	margin-right: 0.5em;
 }
 
 #Contenido .album_info .social .redes .facebook:hover{
@@ -403,12 +410,6 @@ nav ul #Publicar_Nav a:hover
 
 #Contenido .album_info .social .redes .google:hover{
 	color:#a11d19;
-}
-
-
-
-#Contenido .album_info .social .redes span{
-	margin-right: 0.5em;
 }
 
 .album_title
@@ -429,6 +430,10 @@ nav ul #Publicar_Nav a:hover
 		margin: 0 0 2em 0;
 		width: 100%;
 	}
+	
+	#Contenido .Item{
+		margin-bottom: 4em;
+	}
 
 	#Contenido .album_info .album_img{
 		display: block;
@@ -445,6 +450,16 @@ nav ul #Publicar_Nav a:hover
 		margin-bottom: 1em;
 	}
 	#Contenido .album_info .album_datos .votacion_album{
+		display: none;
+	}
+	
+	#Contenido .album_info .social .redes{
+		bottom: 0.3em;
+		position: absolute;
+		right: 2%;
+	}
+
+	#Contenido .album_info .social .redes span{
 		display: none;
 	}
 }
