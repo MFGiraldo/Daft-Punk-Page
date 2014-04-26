@@ -25,11 +25,11 @@
 /*Fuentes de Iconos*/
 @font-face {
 	font-family: 'icomoon';
-	src:url('../Fonts/icomoon.eot?o7l36z');
-	src:url('../Fonts/icomoon.eot?#iefixo7l36z') format('embedded-opentype'),
-		url('../Fonts/icomoon.woff?o7l36z') format('woff'),
-		url('../Fonts/icomoon.ttf?o7l36z') format('truetype'),
-		url('../Fonts/icomoon.svg?o7l36z#icomoon') format('svg');
+	src:url('../Fonts/icomoon.eot?-lkdx7p');
+	src:url('../Fonts/icomoon.eot?#iefix-lkdx7p') format('embedded-opentype'),
+		url('../Fonts/icomoon.woff?-lkdx7p') format('woff'),
+		url('../Fonts/icomoon.ttf?-lkdx7p') format('truetype'),
+		url('../Fonts/icomoon.svg?-lkdx7p#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -48,33 +48,70 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-lapiz:before {
+.icon-notifications:before {
 	content: "\e600";
+}
+.icon-pencil:before {
+	content: "\e601";
 	margin-right: 0.5em;
 }
-.icon-estrella:before {
-	content: "\e601";
+.icon-galery:before {
+	content: "\e602";
+}
+.icon-headphones:before {
+	content: "\e603";
+}
+.icon-camera:before {
+	content: "\e604";
+}
+.icon-cart:before {
+	content: "\e605";
+}
+.icon-cog:before {
+	content: "\e606";
+}
+.icon-star:before {
+	content: "\e607";
 	margin-right: 0.5em;
 	position: relative;
 	top: 0.1em;
 }
-.icon-estrellavot:before {
-	content: "\e602";
+.icon-star2:before {
+	content: "\e608";
+}
+.icon-heart:before {
+	content: "\e609";
+	color: #f03a48;
+}
+.icon-thumbs-up:before {
+	content: "\e60a";
+}
+.icon-thumbs-down:before {
+	content: "\e60b";
+}
+.icon-exit:before {
+	content: "\e60c";
 }
 .icon-googleplus:before {
-	content: "\e603";
+	content: "\e60d";
+}
+.icon-googleplus2:before {
+	content: "\e60e";
 }
 .icon-facebook:before {
-	content: "\e604";
+	content: "\e60f";
+}
+.icon-facebook2:before {
+	content: "\e610";
 }
 .icon-twitter:before {
-	content: "\e605";
+	content: "\e611";
 }
-.icon-flecha-abajo:before {
-	content: "\e606";
+.icon-twitter2:before {
+	content: "\e612";
 }
-.icon-flecha-arriba:before {
-	content: "\e607";
+.icon-github:before {
+	content: "\e613";
 }
 
 a
@@ -418,21 +455,49 @@ section{
 }
 
 /* TrackList */
-#tracklist{
+
+#multimedia{
 	background-color: white;
 	padding: 1em;
+	margin-bottom: 3em;
 
 }
 
-#tracklist .title_track{
+#multimedia .title_sections{
+	border-bottom: solid #21afd9 2px;
 	overflow: hidden;
 }
 
-#tracklist .title_track{
-	border-bottom: solid #21afd9 2px;
+#multimedia .title_sections a{
+	text-decoration: none;
+	color: black;
+	font-size: 2.5em;
+	margin: 0.3em 0.5em 0 0;
+	float: left;
 }
 
-#tracklist .title_track .button_comprar{
+#multimedia .title_sections a:nth-child(1){
+	text-decoration: none;
+	font-size: 2em;
+	margin: 0.5em 0.5em 0 0;
+	float: right;
+}
+
+#multimedia .title_sections h2{
+	display: inline-block;
+}
+
+#multimedia .title_sections .sitio_oficial{
+	float: right;
+	font-size: 2em;
+}
+
+#multimedia .title_sections .sitio_oficial:hover{
+	color: #f03a48;
+	
+}
+
+#multimedia .title_sections .button_comprar{
 	background-color: #44c767;
 	border-radius: 1.6em;
 	border: 2px solid #18ab29;
@@ -447,36 +512,36 @@ section{
 	margin-top: 0.5em;
 }
 
-#tracklist .title_track .button_comprar:hover{	
+#multimedia .title_sections .button_comprar:hover{	
 	border: 2px solid #0d691a;
 	text-shadow: rgba(0,0,0,0.8) 2px 2px 10px;
 }
 
 
-#tracklist .musica1{
+#multimedia .musica1{
 	display: inline-block;
 }
 
-#tracklist .musica2 {
+#multimedia .musica2 {
 	float: right;
 	margin-right: 1.5em;
 
 }
 
-#tracklist .musica1 ol{
+#multimedia .musica1 ol{
 	counter-reset: li; 
 }
 
-#tracklist .musica2 ol{
+#multimedia .musica2 ol{
 	counter-reset: li 7; 
 }
 
-#tracklist .musica1 ol, #tracklist .musica2 ol{
+#multimedia .musica1 ol, #multimedia .musica2 ol{
 	margin-left: 0; 
 	padding-left: 0
 }
 
-#tracklist .musica1 ol li, #tracklist .musica2 ol li{
+#multimedia .musica1 ol li, #multimedia .musica2 ol li{
 	position: relative;     
 	margin: 1.2em 0 1.2em 2em !important; 
 	padding: 4px 8px !important; 
@@ -484,7 +549,7 @@ section{
 	list-style: decimal; 
 }
 
-#tracklist .musica1 ol li:before, #tracklist .musica2 ol li:before{
+#multimedia .musica1 ol li:before, #multimedia .musica2 ol li:before{
 	background: url(../img/circulo1.png) no-repeat left top; 
 	content: counter(li); 
 	counter-increment: li; 
@@ -505,6 +570,36 @@ audio{
 	width: 600px;
 }
 
+/*Galery*/
+#multimedia .imagenes .img_galery{
+	display: inline-block;
+}
+
+#multimedia .imagenes .img_galery img{
+	width: 250px;
+	border: solid white 3px;
+	box-shadow: rgba(0,0,0,0.5) 2px 2px 10px;
+}
+
+#multimedia .imagenes .img_galery img:hover{
+	-webkit-transform: rotate(360deg);
+	-webkit-transition:1s;
+}
+
+/*Vídeos*/
+
+#multimedia .videos{
+	display: block;
+	margin: 1em 0 0 1em;
+}
+
+#multimedia .videos iframe{
+	margin-right: 1em;
+}
+
+#multimedia .title_sections #h2video{
+	margin-right: 43em;
+}
 
 @media screen and (max-width: 480px) {
 	aside
