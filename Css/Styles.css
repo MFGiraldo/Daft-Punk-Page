@@ -238,8 +238,7 @@ nav ul #Publicar_Nav a:hover
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
 }
 
-#Contenido
-{
+section{
 	margin: 1em;
 }
 
@@ -348,7 +347,7 @@ nav ul #Publicar_Nav a:hover
 	float: right;
 }
 
-/* Other Pages */
+/* Informacion */
 
 #Contenido .album_info{
 	background-color: white;
@@ -418,6 +417,95 @@ nav ul #Publicar_Nav a:hover
 	margin: 1em 0 0 0;
 }
 
+/* TrackList */
+#tracklist{
+	background-color: white;
+	padding: 1em;
+
+}
+
+#tracklist .title_track{
+	overflow: hidden;
+}
+
+#tracklist .title_track{
+	border-bottom: solid #21afd9 2px;
+}
+
+#tracklist .title_track .button_comprar{
+	background-color: #44c767;
+	border-radius: 1.6em;
+	border: 2px solid #18ab29;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.1em;
+	float: right;
+	padding: 0.5em 1em;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin-top: 0.5em;
+}
+
+#tracklist .title_track .button_comprar:hover{	
+	border: 2px solid #0d691a;
+	text-shadow: rgba(0,0,0,0.8) 2px 2px 10px;
+}
+
+
+#tracklist .musica1{
+	display: inline-block;
+}
+
+#tracklist .musica2 {
+	float: right;
+	margin-right: 1.5em;
+
+}
+
+#tracklist .musica1 ol{
+	counter-reset: li; 
+}
+
+#tracklist .musica2 ol{
+	counter-reset: li 7; 
+}
+
+#tracklist .musica1 ol, #tracklist .musica2 ol{
+	margin-left: 0; 
+	padding-left: 0
+}
+
+#tracklist .musica1 ol li, #tracklist .musica2 ol li{
+	position: relative;     
+	margin: 1.2em 0 1.2em 2em !important; 
+	padding: 4px 8px !important; 
+	list-style: none; 
+	list-style: decimal; 
+}
+
+#tracklist .musica1 ol li:before, #tracklist .musica2 ol li:before{
+	background: url(../img/circulo1.png) no-repeat left top; 
+	content: counter(li); 
+	counter-increment: li; 
+	position:absolute; 
+	top: 0; 
+	left: -2em; 
+	width: 27px; 
+	bottom: -1px;
+	margin-right: 8px; 
+	padding: 3px 1px 4px 0 !important; 
+	color: #fff;
+	font-size: 1em; 
+	font-weight: bold; 
+	text-align: center
+}
+
+audio{
+	width: 600px;
+}
+
+
 @media screen and (max-width: 480px) {
 	aside
 	{
@@ -463,6 +551,7 @@ nav ul #Publicar_Nav a:hover
 		display: none;
 	}
 }
+
 
 @media screen and (min-width: 800px) {
 	#Contenido
